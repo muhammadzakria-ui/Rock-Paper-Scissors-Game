@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffeceb;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    background-color: #150029;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+h1{
+    background: linear-gradient(45deg,#fd0000,rgb(255,0,255),aqua);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#btn {
+    background-color: #150029;
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    margin-top: 0.5rem;
+}
+
+#btn:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Game Choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.choice {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #150029;
+}
+img:hover {
+    opacity: .5;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Scoreboard */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#user-score, #comp-score, #draw-score {
+    font-size: 2.5rem;
+}
+
+/* Message */
+.msg-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#msg {
+    background-color: #150029;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+    .choice {
+        width: 100px;
+        height: 100px;
+    }
+
+    .score-board {
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+    #user-score, #comp-score, #draw-score {
+        font-size: 2rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choice {
+        width: 90px;
+        height: 90px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+
+    #btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+

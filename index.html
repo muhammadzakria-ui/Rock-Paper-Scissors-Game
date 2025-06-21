@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--  starting heading -->
+      <nav>
+        <h1>
+            Rock Paper Scissor Game
+        </h1>
+        <button id="btn" type="button" onclick="window.location.reload()">Reset button</button>
+      </nav>
+<!--    imgs which are choices -->
+    <div class="choices">
+    <div class="choice" id="paper">
+    <img src="paper.png" alt="paper">
+     </div>
+      <div class="choice" id="rock">
+    <img src="rock.png" alt="rock">
+      </div>
+     <div class="choice" id="scissors">
+    <img src="scissors.png" alt="scissors">
+     </div>
+    </div>
+
+    <!-- score board -->
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>YourScore</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>CompScore</p>
+        </div>
+        <div class="score">
+            <p id="draw-score">0</p>
+            <p>DrawScore</p>
+        </div>
+        <!-- msg container in which message are shown -->
+    </div>
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
